@@ -1,7 +1,4 @@
-function Hamming(strand1, strand2) {
-  this.strand1 = strand1;
-  this.strand2 = strand2;
-}
+function Hamming () {};
 
 Hamming.prototype.compute = function(strand1, strand2) {
   var str1 = strand1.split("");
@@ -15,6 +12,6 @@ Hamming.prototype.compute = function(strand1, strand2) {
     }
   }
   return diff;
-}
+};
 
 module.exports = Hamming;
